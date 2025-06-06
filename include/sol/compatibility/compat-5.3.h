@@ -31,9 +31,9 @@ extern "C" {
 #ifndef COMPAT53_API
 #  if defined(COMPAT53_INCLUDE_SOURCE) && COMPAT53_INCLUDE_SOURCE
 #    if defined(__GNUC__) || defined(__clang__)
-#      define COMPAT53_API __attribute__((__unused__)) static inline 
+#      define COMPAT53_API __attribute__((__unused__)) inline 
 #    else
-#      define COMPAT53_API static inline 
+#      define COMPAT53_API inline 
 #    endif /* Clang/GCC */
 #  else /* COMPAT53_INCLUDE_SOURCE */
 /* we are not including source, so everything is extern */
