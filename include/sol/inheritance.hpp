@@ -43,23 +43,19 @@ namespace sol {
 	namespace detail {
 
 		inline decltype(auto) base_class_check_key() {
-			static const auto& key = "class_check";
-			return key;
+			return "class_check";
 		}
 
 		inline decltype(auto) base_class_cast_key() {
-			static const auto& key = "class_cast";
-			return key;
+			return "class_cast";
 		}
 
 		inline decltype(auto) base_class_index_propogation_key() {
-			static const auto& key = u8"\xF0\x9F\x8C\xB2.index";
-			return key;
+			return u8"\xF0\x9F\x8C\xB2.index";
 		}
 
 		inline decltype(auto) base_class_new_index_propogation_key() {
-			static const auto& key = u8"\xF0\x9F\x8C\xB2.new_index";
-			return key;
+			return u8"\xF0\x9F\x8C\xB2.new_index";
 		}
 
 		template <typename T>
